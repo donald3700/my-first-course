@@ -1,0 +1,64 @@
+<html lang="en"><head>
+<meta charset="utf-8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link type="text/css" rel="stylesheet" href="css/loginStyle.css">
+<!--<link rel="stylesheet" href="css/resize.css">-->
+<!--<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">-->
+<!--<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="events.js"></script>-->
+<!-- ==============================================
+    TITLE AND META TAGS
+    =============================================== -->
+    <title>Login - First Action Finance</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Quickdev">
+
+    <!-- ==============================================
+    FAVICON
+    =============================================== -->  
+        <link rel="shortcut icon" href="img/master/favicon.png">
+             
+    <!-- ==============================================
+    CSS
+    =============================================== -->
+    <style>
+        body{
+            background-image: url('images/bank-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            background-position: 50% 0;
+        }
+        
+        .error{
+            color: red;
+            font-family:helvetica;
+            font-size:12px;
+        }
+    </style>    
+</head>
+<body>
+  <div class="row" id="wrap_all">
+  <div id="cover"></div>
+   <div class="col-7 col-m-7" style="border-radius:3px;">
+    <!--<div class="loader"></div>-->
+    <div id="logo"><h2 style="font-family: helvetica;
+    font-size: 30px; color:#428bca; text-align:center;">FIRST ACTION FINANCE</h2></div>
+    <form method="post" action="https://firstactionfinanc.com/admin/login.php">
+     <input type="text" name="email" placeholder="Email Address"><br>
+     <input type="password" name="password" placeholder="Password"><br>
+    <!-- <span class="Divcheckbox">
+   <input type="checkbox" value="None" id="checkboxStyle" name="check" /> &nbsp;&nbsp; Remember User ID
+   <label for="checkboxStyle"></label>
+     </span>-->
+     <div class="submit"><input type="submit" name="submit_form" id="submit" value="Login"></div>
+    </form> 
+   </div>
+  </div>
+
+</body></html>
