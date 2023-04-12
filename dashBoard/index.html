@@ -1,0 +1,150 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="description" content="Bootstrap How to collapse the mobile (responsive) navbar once one of the links is clicked. No jQuery needed. Just use data-toggle=collapse on the appr" />-->
+    <link type="text/css" rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+    <!--<link type="text/css" rel="stylesheet" href="stylesheet/nivo-slider.css">-->
+    <link type="text/css" rel="stylesheet" href="css/responsiveslides.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--<link rel="icon" href="images/19142313_1494059417283089_2064631961_n.jpg">-->
+    <script src="js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!--<script src="Javascript/jquery.nivo.slider.pack.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/effects.js"></script>
+    <title>Dashboard | First Action Finance</title>
+</head>
+<body>
+<div class="container"><!--Holds the whole contents-->
+    <div class="row" id="navigation"><!--Menu-->
+        <nav class="navbar navbar-nav">
+            <div class="container">
+                <!--Logo-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                        <span class="icon-bar" id="bar1"></span>
+                        <span class="icon-bar" id="bar2"></span>
+                        <span class="icon-bar" id="bar3"></span>
+                    </button>
+                    <a href="https://firstactionfinance.com/admin/" class="navbar-brand" id="coy_name"><span style="font-family:Courier New, monospace; font-size:20px;">First Action Finance</span></a>
+                </div>
+                <!--End of Logo-->
+                <!--Menu items-->
+                <div class="collapse navbar-collapse" id="mainNavBar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://firstactionfinance.com/admin/" style="font-weight:bold;">Dashboard</a></li>
+                        <li><a href="create.php">Create Account</a></li>
+                        <li><a href="login/index.html">Log Out</a></li>
+                        <!--<li><a href="services.html">Services</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div><!--END of navigation-->
+    <div class="row" style="margin-top: 65px; clear: both;">
+        <div class="col-9 col-m-9" id="sliding" style="/*border: 1px solid #dadada; border-radius: 3px;*/">
+            <div id="slider">
+                <ul class="rslides">
+                    <!--<li><img src="images/slideshow_001.jpg" alt="ban1"/></li>-->
+                    <!--<li><img src="images/dash.jpg" alt="ban2" height="650px" width="700px" /></li>
+                    <li><img src="images/banker.jpg" alt="ban3" height="650px" width="700px" /></li>-->
+                    <li><img src="images/bank-chart.jpg" alt="ban3" width="650px" height="500px" style="opacity: 0.3;"></li>
+                    <!--<li><img src="images/slideshow_004.jpg" alt="ban4"/></li>
+                    <li><img src="images/slideshow_006.jpg" alt="ban6"/></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="col-3 col-m-3">
+            <h4 style="font-family:Comic Sans MS, Comic Sans, cursive; font-size:30px;" class="gz"><span style="color:#026fbf;">First Action</span> FINANCE</h4>
+            <hr>
+            <!--<p>Get In Touch</p>-->
+            <span class="glyphicon glyphicon-user"></span>  &nbsp;&nbsp;<a href="create/create.html">Create Account</a> <br>
+            <span class="glyphicon glyphicon-eye-open"></span>  &nbsp;&nbsp;<a href="view/view.html">View Account</a> <br>
+            <span class="glyphicon glyphicon-open"></span>  &nbsp;&nbsp;<a href="update/update.html">Update Website Details</a> <br>
+            <span class="glyphicon glyphicon-plus-sign"></span>  &nbsp;&nbsp;<a href="error/errorMessage.html">Error Messsage</a> <br>
+            <span class="glyphicon glyphicon-log-out"></span>  &nbsp;&nbsp;<a href="login/index.html">Log Out</a>
+            <hr>
+            <img src="images/home.png" style="width: 250px;">
+        </div>
+    </div>
+    <!--<div class="row" id="carousel" style="clear: both; border-top: 1px solid #dadada;">
+        <div class="col-4 col-m-4" id="close1">
+            <h4>Commercial Construction</h4>
+            <div class="hold_img">
+                <img class="im1" src="images/user_001.jpg"/>
+            </div>
+        </div>
+        <div class="col-4 col-m-4" id="close2">
+            <h4>Civil Construction</h4>
+            <div class="hold_img">
+                <img class="im2" src="images/user_002.jpg"/>
+            </div>
+        </div>
+        <div class="col-4 col-m-4" id="close3">
+            <h4>Excavation and Concrete</h4>
+            <div class="hold_img">
+                <img class="im3" src="images/user_003.jpg"/>
+            </div>
+        </div>
+    </div>--><br>
+    <hr>
+    <!--<div class="row">
+        <div class="col-8 col-m-8">
+            <h4>GZ Construction Company</h4>
+            <p class="gz_write">
+                GZ Construction Co. is a commercial contractor specializing in Infrastructure and Commercial Building Construction with an emphasis on General Contracting and Construction Management.
+                GZ Construction is highly committed to building quality and cost effective projects.
+                Our job process is one where we work closely with owners, engineers, and architects to insure that the job is done cost effectively, but with the utmost quality of work.
+                Having graduated from the University of Oklahoma with a degree in Construction Management, President Tyson Young is committed to professionalism and customer service, with a clear focus on thoroughness and job quality.
+                GZ Construction Co. strives to maintain a safe site and work environment on all projects and guarantees that safety is our number one priority.
+                GZ Co. serves all of Oklahoma plus surrounding areas.
+            </p><br>
+            <div class="dedication">
+                <div class="col-5 col-m-5">
+                    <div class="temp">
+                        <img src="images/tn_template.jpg"/>
+                    </div>
+                </div>
+                <div class="col-7 col-m-7" id="dedicate">
+                    <h4 class="mobi">DEDICATED TO CUSTOMER SATISFACTION IN :</h4>
+                    <ul>
+                        <li><b>General Construction</b></li>
+                        <li><b>Civil Construction</b></li>
+                        <li><b>Commercial Construction</b></li>
+                        <li><b>Excavation</b></li>
+                        <li><b>Concrete</b></li>
+                        <li><b>Safe Site and Work Environment</b></li>
+                        <li><b>Professional Ethics and Customer Service</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-m-4" id="list_style">
+            <h4>Our Construction Jobs</h4>
+            <ul>
+                <li><b>Civil Construction</b></li>
+                <li><b>Commercial Construction</b></li>
+                <li><b>Excavation</b></li>
+                <li><b>Concrete</b></li>
+            </ul>
+            <br>
+            <div class="worldMap">
+                <img class="wmap" src="images/worldMap.png" width="360"/>
+            </div>
+        </div>
+    </div>-->
+    <div class="row" id="footing">
+        <div class="col-12 col-m-12">FIRST ACTION FINANCE © 2023 </div>
+    </div>
+</div><!--end of container tag-->
+<script>
+    /*$(function() {
+        $(".rslides").responsiveSlides({
+            auto: true
+        });
+    });*/
+</script>
+
+</body></html>

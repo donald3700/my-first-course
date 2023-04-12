@@ -1,0 +1,715 @@
+/*==========================Typography and Layouts=======================================================*/
+
+
+*{
+  box-sizing:border-box;	
+}
+
+.error{
+	text-align:center;
+	text-transform:uppercase;
+	font-family:'Roboto',sans-serif;
+	color:#F00;
+}
+
+
+ /* For mobile phones: */
+    [class*="col-"] {
+       width: 100%;
+    }
+	
+
+@media only screen and (min-width: 0px) {
+#wrap_all{
+   margin-top:50px;
+   border-radius:2px;
+}
+
+/*Overlay Div*/
+#cover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.80;
+   background: #aaa;
+   z-index: 10;
+   display: none;
+}
+
+.row{
+  width:100%;	
+  clear:both;
+  border-radius:2px;
+}
+
+.col-7{
+  width: 100%;
+  height:auto;
+  padding: 15px 25px 45px;
+  margin: 0 auto;
+  background-color: #fff; 
+  clear:both;
+  border-radius:2px;
+}	
+
+img{
+  max-width:100%;
+  /*width:250px;*/
+  height:auto;
+ /* padding-left:100px;	*/
+ display:block;
+ margin:0 auto;
+}
+	
+input[type="text"] {
+	  width:100%;
+	  border-top:0px;
+	  border-left:0px;
+	  border-right:0px;
+	  border-bottom:1px solid #000;
+	  border-radius:0px;
+	  padding-left:0px;
+	  margin-top:10px;
+	  height:35px;
+	  font-family:Helvetica;
+	}
+	
+	
+input[type="password"] {
+	  width:100%;
+	  border-top:0px;
+	  border-left:0px;
+	  border-right:0px;
+	  border-bottom:1px solid #000;
+	  border-radius:0px;
+	  padding-left:0px;
+	  margin-top:13px;
+	  height:35px;
+	  font-family:Helvetica;
+}
+
+input[type="checkbox"] {
+		visibility:hidden;
+		margin-top:22px;
+	}
+	
+	.Divcheckbox {
+	  width: 22px;
+	  margin: 1px 0px;
+	  line-height:53px;
+	  position: relative;
+	  font-size:11.5px;
+	  font-weight:500;
+	  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    }
+	
+	.Divcheckbox label {
+	  cursor: pointer;
+	  position: absolute;
+	  width: 22px;
+	  height: 20px;
+	  top: 0;
+	  left: 0;
+	  background: #eee;
+	  border:0.5px solid #ddd;
+	  border-radius:3px;
+   }
+   
+   .Divcheckbox label:after {
+	  opacity: 0;
+	  content: '';
+	  position: absolute;
+	  width: 9px;
+	  height: 5px;
+	  background: transparent;
+	  top: 6px;
+	  left: 7px;
+	  border: 3px solid #333;
+	  border-top: none;
+	  border-right: none;
+  
+	  transform: rotate(-45deg);
+   }
+   
+   .Divcheckbox label:hover::after {
+	opacity: 0;
+  }
+
+/**
+ * Create the checkbox state for the tick
+ */
+  .Divcheckbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+  }
+
+.submit{
+   width:100%;
+   height:50px;
+   /*border:1px solid #00467f;*/
+   border-radius:2.5px;
+   margin-top:10px;
+   background-color:#333;
+   color:#428bca;
+}
+
+#submit{
+  width:100%;
+  height:50px;
+  background-color:#10151B;
+  font-size:13px;
+  font-weight:500;
+  border-left:0px;
+  border-top:0px;
+  border-right:0px;
+  border-bottom:0px;
+  color:#fff;
+}
+
+p#sign{
+	text-align:center;
+	padding-top:5px;
+	font-size:12px;
+	font-weight:400;
+	color:#1e90ff;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;  
+  }
+  
+  #circles{
+   max-width:380px;
+   height:55px;
+   margin-top:45px;  
+  }
+  
+  
+  #tag { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left; 
+   }
+  
+  #mark { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left;
+   margin-left:10px;
+   color:#fff;
+   text-align:center; 
+   }
+   
+   #signUp{
+	float:right;
+	width:100px;
+	color:#00467f;
+	font-size:12px;
+	line-height:12px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;   
+   }
+   
+   #pencil { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left;
+   margin-left:45px; 
+   }
+   
+   #logo{
+	   border-radius:4px;
+	   background-color:#333;
+   }
+   
+    #logo img{
+		width:60%;
+		height:auto;
+		margin-left:30px;
+   }
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+	
+
+#wrap_all{
+   margin-top:30px;
+   border-radius:2px;
+}
+
+/*Overlay Div*/
+#cover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.80;
+   background: #aaa;
+   z-index: 10;
+   display: none;
+}
+	
+.row{
+  width:75%;
+  clear:both;
+  margin:0 auto;
+  border-radius:2px;
+}
+
+.col-7{
+  width: 60%;
+  height:auto;
+  padding: 15px 25px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  clear:both;
+  border-radius:2px;
+}	
+
+img{
+  max-width:100%;
+  height:auto;
+ /* width:250px;*/
+  display:block;
+  margin:0 auto;	
+}
+	
+input[type="text"] {
+	  width:100%;
+	  border-top:0px;
+	  border-left:0px;
+	  border-right:0px;
+	  border-bottom:1px solid #000;
+	  border-radius:0px;
+	  padding-left:0px;
+	  margin-top:10px;
+	  height:35px;
+	  font-family:Helvetica;
+	}
+	
+	
+input[type="password"] {
+	  width:100%;
+	  border-top:0px;
+	  border-left:0px;
+	  border-right:0px;
+	  border-bottom:1px solid #000;
+	  border-radius:0px;
+	  padding-left:0px;
+	  margin-top:10px;
+	  height:35px;
+	  font-family:Helvetica;
+}
+
+input[type="checkbox"] {
+		visibility:hidden;
+		margin-top:18px;
+	}
+	
+	.Divcheckbox {
+	  width: 22px;
+	  margin: 1px 0px;
+	  line-height:53px;
+	  position: relative;
+	  font-size:11.5px;
+	  font-weight:500;
+	  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    }
+	
+	.Divcheckbox label {
+	  cursor: pointer;
+	  position: absolute;
+	  width: 22px;
+	  height: 20px;
+	  top: 0;
+	  left: 0;
+	  background: #eee;
+	  border:0.5px solid #ddd;
+	  border-radius:3px;
+   }
+   
+   .Divcheckbox label:after {
+	  opacity: 0;
+	  content: '';
+	  position: absolute;
+	  width: 9px;
+	  height: 5px;
+	  background: transparent;
+	  top: 6px;
+	  left: 7px;
+	  border: 3px solid #333;
+	  border-top: none;
+	  border-right: none;
+  
+	  transform: rotate(-45deg);
+   }
+   
+   .Divcheckbox label:hover::after {
+	opacity: 0;
+  }
+
+/**
+ * Create the checkbox state for the tick
+ */
+  .Divcheckbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+  }
+  
+  .submit{
+   width:100%;
+   height:55px;
+   /*border:1px solid #00467f;*/
+   border-radius:2.5px;
+   margin-top:12px;	
+   background-color:#333;
+   color:#428bca;
+}
+
+#submit{
+  width:100%;
+  height:55px;
+  background-color:#10151B;
+  font-size:12.5px;
+  font-weight:500;
+  border-left:0px;
+  border-top:0px;
+  border-right:0px;
+  border-bottom:0px;
+  color:#fff;
+}
+
+p#sign{
+	text-align:center;
+	padding-top:10px;
+	font-size:12px;
+	font-weight:400;
+	color:#1e90ff;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;   
+  }
+  
+  #circles{
+   max-width:380px;
+   height:55px;
+   margin-top:30px;  
+  }
+  
+  
+  #tag { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left; 
+   }
+  
+  #mark { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left;
+   margin-left:10px;
+   color:#fff;
+   text-align:center; 
+   }
+   
+   #signUp{
+	float:right;
+	width:110px;
+	color:#00467f;
+	font-size:13px;
+	line-height:17px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;   
+   }
+   
+   #pencil { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left;
+   margin-left:75px; 
+   }
+   
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+#wrap_all{
+   margin-top:70px;
+   border-radius:2px;
+}
+
+/*Overlay Div*/
+#cover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.80;
+   background: #aaa;
+   z-index: 10;
+   display: none;
+}
+
+/*Loader Div*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.loader {
+	position:absolute;
+	width: 5%;
+	height: 5%;
+	z-index:9999;
+	background:url(images/loader.gif) center no-repeat #fff;
+	margin-top:155px;
+	margin-left:120px;
+	display:none;
+}
+	
+.row{
+  width:50%;
+  clear:both;
+  margin:0 auto;
+  border-radius: 2px;
+}
+
+.col-7{
+  width: 60%;
+  padding: 15px 25px 45px;
+  margin: 0 auto;
+  background-color: #fff; 
+  clear:both;
+  border-radius:2px;
+}	
+
+img{
+  max-width:100%;
+  height:auto;
+ /* width:250px;
+  height:110px;
+  padding-left:100px;	*/
+ display:block;
+ margin:0 auto;
+}
+	
+input[type="text"] {
+	  width:100%;
+	  border-top:0px;
+	  border-left:0px;
+	  border-right:0px;
+	  border-bottom:1px solid #000;
+	  border-radius:0px;
+	  padding-left:0px;
+	  margin-top:10px;
+	  height:35px;
+	  font-family:Helvetica;
+	}
+	
+	
+input[type="password"] {
+	  width:100%;
+	  border-top:0px;
+	  border-left:0px;
+	  border-right:0px;
+	  border-bottom:1px solid #000;
+	  border-radius:0px;
+	  padding-left:0px;
+	  margin-top:14px;
+	  height:35px;
+	  font-family:Helvetica;
+}
+
+input[type="checkbox"] {
+		visibility:hidden;
+		margin-top:16px;
+	}
+	
+	.Divcheckbox {
+	  width: 22px;
+	  margin: 1px 0px;
+	  line-height:53px;
+	  position: relative;
+	  font-size:11.5px;
+	  font-weight:500;
+	  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    }
+	
+	.Divcheckbox label {
+	  cursor: pointer;
+	  position: absolute;
+	  width: 22px;
+	  height: 20px;
+	  top: 0;
+	  left: 0;
+	  background: #eee;
+	  border:0.5px solid #ddd;
+	  border-radius:3px;
+   }
+   
+   .Divcheckbox label:after {
+	  opacity: 0;
+	  content: '';
+	  position: absolute;
+	  width: 9px;
+	  height: 5px;
+	  background: transparent;
+	  top: 6px;
+	  left: 7px;
+	  border: 3px solid #333;
+	  border-top: none;
+	  border-right: none;
+  
+	  transform: rotate(-45deg);
+   }
+   
+   .Divcheckbox label:hover::after {
+	opacity: 0;
+  }
+
+/**
+ * Create the checkbox state for the tick
+ */
+  .Divcheckbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+  }
+  
+  .submit{
+   width:100%;
+   height:60px;
+   /*border:1px solid #00467f;*/
+   border-radius:2.5px;
+   margin-top:12px;
+   background-color:#333;
+   color:#428bca;
+}
+
+#submit{
+  width:100%;
+  height:60px;
+  background-color:#333;
+  font-size:12.5px;
+  font-weight:500;
+  border-left:0px;
+  border-top:0px;
+  border-right:0px;
+  border-bottom:0px;
+  border-radius:4px;
+  color:#fff;
+}
+
+p#sign{
+	text-align:center;
+	padding-top:12px;
+	font-size:12px;
+	font-weight:400;
+	color:#1e90ff;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;   
+  }
+  
+  #circles{
+   max-width:380px;
+   height:55px;
+   margin-top:25px;  
+  }
+  
+  
+  #tag { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left; 
+   }
+  
+  #mark { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left;
+   margin-left:10px;
+   color:#fff;
+   text-align:center; 
+   }
+   
+   #pencil { 
+   width: 25px; 
+   height: 25px;  
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   background-color:#00467f;
+   float:left;
+   margin-left:115px; 
+   }
+   
+   #signUp{
+	float:right;
+	width:124px;
+	color:#00467f;
+	font-size:14px;
+	line-height:17px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;    
+   }
+   
+    #logo{
+	   border-radius:4px;
+	   background-color:#333;
+   }
+   
+    #logo img{
+		width:80%;
+		height:auto;
+		margin-left:30px;
+   }
+   
+}
